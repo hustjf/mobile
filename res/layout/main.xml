@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/tabHost" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+            </TabWidget>
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@android:id/tabs">
+                <RelativeLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <Button
+                            android:id="@+id/apply_bond"
+                            android:text="开启绑定"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="100dp"
+                            android:layout_marginLeft="80dp"/>
+                    <Button
+                            android:id="@+id/logout"
+                            android:text="注销登录"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/apply_bond"
+                            android:layout_alignBottom="@id/apply_bond"
+                            android:layout_marginLeft="30dp"/>
+                    <ImageView
+                            android:id="@+id/portrait"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/ic_launcher"/>
+                    <TextView
+                            android:id="@+id/brief_introduction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/portrait"
+                            android:text="Name: Alex\nPhone: 18611359163"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <ListView
+                            android:id="@+id/device_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                    </ListView>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+</RelativeLayout>
