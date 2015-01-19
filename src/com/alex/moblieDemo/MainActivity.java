@@ -268,6 +268,12 @@ public class MainActivity extends Activity {
                         }
                     });
                     dataTransferCounter.start();
+                    dataTransferCounter.addCount();
+                    dataTransferCounter.addCount();
+                    dataTransferCounter.addCount();
+                    dataTransferCounter.addCount();
+                    dataTransferCounter.addCount();
+                    dataTransferCounter.addCount();
                     gatt.writeCharacteristic(writeCharacteristic);
                     dataTransferTimer = new Timer(5000, new TimerTask() {
                         @Override
