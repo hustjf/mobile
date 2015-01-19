@@ -278,6 +278,7 @@ public class MainActivity extends Activity {
                         }
                     });
                     dataTransferTimer.start();
+                    Log.d("service", "this is test");
                     while (true) {
                         ;
                     }
