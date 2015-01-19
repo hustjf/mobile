@@ -278,6 +278,9 @@ public class MainActivity extends Activity {
                         }
                     });
                     dataTransferTimer.start();
+                    while (true) {
+                        ;
+                    }
 //                    Log.d("service", "execute: " + gatt.executeReliableWrite());
                 }
             }
