@@ -382,6 +382,12 @@ public class MainActivity extends Activity {
             }
         });
         connectCounter.start();
+        connectCounter.addCount();
+        connectCounter.addCount();
+        connectCounter.addCount();
+        connectCounter.addCount();
+        connectCounter.addCount();
+        connectCounter.addCount();
         bluetoothGatt = device.connectGatt(MainActivity.this, true, gattCallback);
     }
 
